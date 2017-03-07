@@ -34,6 +34,7 @@ set ignorecase
 set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
+command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
 filetype on
 filetype plugin on
 set t_Co=256
