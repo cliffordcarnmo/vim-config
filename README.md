@@ -8,8 +8,10 @@ I use the theme https://github.com/nanotech/jellybeans.vim but it can be used wi
 
 
 **vim-airline plugin**
+
 https://github.com/vim-airline/vim-airline
 
 
 **jellybeans vim-airline theme**
+
 https://github.com/vim-airline/vim-airline-themes
