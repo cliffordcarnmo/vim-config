@@ -39,4 +39,5 @@ filetype on
 filetype plugin on
 set t_Co=256
 colorscheme jellybeans
+let g:airline_theme="jellybeans"
 syntax on
