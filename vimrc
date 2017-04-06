@@ -34,6 +34,7 @@ set ignorecase
 set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
+autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
 nnoremap <C-b> :make<return>
 filetype on
