@@ -1,3 +1,14 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'bling/vim-airline'
+call vundle#end()
+filetype plugin indent on
 let $LANG = 'en_US'
 set langmenu=en_US
 set showtabline=1
@@ -13,6 +24,7 @@ set tabstop=4
 set hlsearch
 set incsearch
 set ruler
+set termguicolors
 set background=dark
 set cursorline
 set more
@@ -35,11 +47,9 @@ set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
 autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
-command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
 nnoremap <C-b> :make<return>
-filetype on
-filetype plugin on
 set t_Co=256
-colorscheme jellybeans
-let g:airline_theme="jellybeans"
+let g:onedark_termcolors=256
+let g:airline_theme='onedark'
 syntax on
+colorscheme onedark
