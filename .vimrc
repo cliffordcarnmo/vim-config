@@ -35,6 +35,7 @@ set laststatus=2
 set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
+autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 nnoremap <C-b> :make<return>
 hi CursorLine term=none cterm=none guibg=Grey14
 set t_Co=256
