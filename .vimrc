@@ -1,13 +1,3 @@
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'joshdick/onedark.vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'bling/vim-airline'
-call vundle#end()
 filetype plugin indent on
 let $LANG = 'en_US'
 set langmenu=en_US
@@ -43,13 +33,9 @@ set wildmode=longest:full
 set wildmenu
 set laststatus=2
 set ignorecase
-set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
-autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 nnoremap <C-b> :make<return>
+hi CursorLine term=none cterm=none guibg=Grey14
 set t_Co=256
-let g:onedark_termcolors=256
-let g:airline_theme='onedark'
 syntax on
-colorscheme onedark
