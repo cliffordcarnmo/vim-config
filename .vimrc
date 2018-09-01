@@ -1,6 +1,8 @@
 filetype plugin indent on
 let $LANG = 'en_US'
 set langmenu=en_US
+set title
+set mouse=a
 set showtabline=1
 set encoding=utf-8
 set backspace=2
@@ -16,7 +18,6 @@ set incsearch
 set ruler
 set termguicolors
 set background=dark
-set cursorline
 set more
 set autoread
 set noautowrite
@@ -28,6 +29,7 @@ set sidescrolloff=5
 set linebreak
 set cmdheight=2
 set ttyfast
+set lazyredraw
 set noerrorbells
 set wildmode=longest:full
 set wildmenu
@@ -36,7 +38,5 @@ set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
 autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
-nnoremap <C-b> :make<return>
-hi CursorLine term=none cterm=none guibg=Grey14
 set t_Co=256
 syntax on
