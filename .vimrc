@@ -37,6 +37,7 @@ set laststatus=2
 set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
-autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 set t_Co=256
+map <C-PageUp> :bp<cr>
+map <C-PageDown> :bn<cr>
 syntax on
