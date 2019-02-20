@@ -2,7 +2,6 @@ filetype plugin indent on
 let $LANG = 'en_US'
 set langmenu=en_US
 set title
-set mouse=a
 set showtabline=1
 set encoding=utf-8
 set backspace=2
@@ -17,7 +16,6 @@ set hlsearch
 set incsearch
 set ruler
 set termguicolors
-set background=dark
 set more
 set autoread
 set noautowrite
