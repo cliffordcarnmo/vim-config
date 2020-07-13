@@ -38,4 +38,5 @@ set completeopt=menu,longest,preview
 set t_Co=256
 map <C-PageUp> :bp<cr>
 map <C-PageDown> :bn<cr>
+autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 syntax on
