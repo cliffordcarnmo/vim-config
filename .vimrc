@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tikhomirov/vim-glsl'
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 filetype plugin indent on
@@ -41,4 +42,7 @@ set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
 set t_Co=256
+
+map <C-o> :NERDTreeToggle<CR>
+
 syntax on
