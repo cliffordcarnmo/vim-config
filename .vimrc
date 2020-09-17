@@ -1,6 +1,12 @@
+call plug#begin('~/.vim/plugged')
+Plug 'tikhomirov/vim-glsl'
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
 filetype plugin indent on
 let $LANG = 'en_US'
 set langmenu=en_US
+set mouse=a
 set title
 set showtabline=1
 set encoding=utf-8
@@ -15,7 +21,6 @@ set tabstop=4
 set hlsearch
 set incsearch
 set ruler
-set termguicolors
 set more
 set autoread
 set noautowrite
@@ -36,7 +41,4 @@ set ignorecase
 set showmatch
 set completeopt=menu,longest,preview
 set t_Co=256
-map <C-PageUp> :bp<cr>
-map <C-PageDown> :bn<cr>
-autocmd BufNewFile,BufRead *.asm set syntax=acme.vim
 syntax on
